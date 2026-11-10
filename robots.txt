@@ -1,0 +1,6 @@
+# TEST SITE: keep search engines out until launch on coolchurch.org.
+# At launch, replace with:
+#   User-agent: *
+#   Allow: /
+User-agent: *
+Disallow: /

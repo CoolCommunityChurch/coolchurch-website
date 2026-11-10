@@ -1,0 +1,15 @@
+# Large source footage (several GB) - kept on this computer only
+media/raw/
+
+# Internal planning files: design brief, Subsplash audit, photo approval sheets
+# (the sheets include photos of children that were not approved for the site)
+docs/
+
+# Local tools and app settings
+.claude/
+tools/
+
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store
