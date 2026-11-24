@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="css/site.css">
   <link rel="icon" type="image/png" href="media/brand/favicon.png">
   <script src="js/site.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Church","name":"Cool Community Church","url":"https://coolchurch.org/","telephone":"+1-530-885-4385","email":"info@coolchurch.org",
+   "address":{"@type":"PostalAddress","streetAddress":"863 Cave Valley Rd","addressLocality":"Cool","addressRegion":"CA","postalCode":"95614","addressCountry":"US"},
+   "sameAs":["https://www.facebook.com/coolchurch","https://www.instagram.com/coolcommunitychurch/"],
+   "event":{"@type":"Event","name":"Sunday Worship Service","eventSchedule":{"@type":"Schedule","byDay":"https://schema.org/Sunday","startTime":"10:30","scheduleTimezone":"America/Los_Angeles"}}}
+  </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -34,10 +40,11 @@
         </div>
       </div>
       <div class="dropdown">
-        <a class="drop-top" href="visit.html">Plan Your Visit</a>
-        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-2" aria-label="Show Plan Your Visit pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <a class="drop-top" href="visit.html">Visit</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-2" aria-label="Show Visit pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
         <div class="drop-menu" id="menu-2">
-          <a href="visit.html">Sunday Morning</a>
+          <a href="visit.html">Plan Your Visit</a>
+          <a href="visit.html#faq">Visitor Questions</a>
           <a href="visit.html#look-around">Take a Look Around</a>
           <a href="calendar.html">Calendar</a>
           <a href="connect.html#contact">Contact Us</a>
@@ -49,6 +56,7 @@
         <div class="drop-menu" id="menu-3">
           <a href="connect.html#groups">Classes &amp; Groups</a>
           <a href="connect.html#next-steps">Next Steps</a>
+          <a href="connect.html#serve">Serve</a>
           <a href="connect.html#connect-card">Connect Card</a>
           <a href="connect.html#prayer">Prayer Request</a>
           <a href="connect.html#coffee">Coffee with Pastor Drew</a>
@@ -62,7 +70,9 @@
         <div class="drop-menu" id="menu-4">
           <a href="sermons.html#live">Watch Live</a>
           <a href="sermons.html#library">Sermon Library</a>
-          <a href="blog.html">Blog: From Pastor Drew</a>
+          <a href="sermons.html#listen">Podcast &amp; More</a>
+          <a href="resources.html">Resources</a>
+          <a href="resources.html#stories">Stories</a>
         </div>
       </div>
       <div class="dropdown">
@@ -72,10 +82,11 @@
           <a href="kids.html#childrens-church">Children's Church</a>
           <a href="kids.html#events">Kids Events</a>
           <a href="kids.html#adventure-club">Adventure Club</a>
-          <a href="kids.html#youth">Cool Youth</a>
+          <a href="youth.html">Cool Youth</a>
           <a href="youth-calendar.html">Youth Calendar</a>
         </div>
       </div>
+      <a class="btn btn-ghost nav-visit" href="visit.html">Plan Your Visit</a>
       <a class="btn" href="give.html">Give</a>
     </nav>
   </div>
@@ -90,9 +101,9 @@
       <source src="media/hero.mp4?v=4" type="video/mp4">
     </video>
     <div class="wrap">
-      <span class="when">Sundays · 10:30 am</span>
+      <span class="when">Sundays · 10:30 am · Cool, California</span>
       <h1>Cool Community Church</h1>
-      <p class="lead">Come as you are. We'd love to meet you this Sunday at 863 Cave Valley Rd, Cool.</p>
+      <p class="lead">A Bible-teaching church family in Cool, California, on the Georgetown Divide. Come as you are. We'd love to meet you this Sunday at 863 Cave Valley Rd.</p>
       <div class="actions">
         <a class="btn" href="visit.html">Plan Your Visit</a>
         <a class="btn btn-outline" href="sermons.html#live">Watch Live · Sundays 10:30</a>
@@ -117,6 +128,37 @@
         <p style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-ghost" href="visit.html">What to expect</a><a class="btn btn-ghost" href="connect.html#connect-card">Let us know you're coming</a></p>
       </div>
       <img class="photo-img" src="media/photos/worship-team.jpg" alt="The worship team leading songs beneath the cross and stained glass" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section" id="this-week">
+    <div class="wrap">
+      <p class="eyebrow">This week at Cool Community</p>
+      <h2>Latest sermon &amp; upcoming events</h2>
+      <div class="split" style="align-items:start;margin-top:24px">
+        <div>
+          <h3>Latest sermon</h3>
+          <div class="video-16x9" style="margin:12px 0 16px">
+            <iframe src="https://subsplash.com/u/-6BHPW2/media/embed/d/*?" title="Latest sermon" allow="clipboard-read; clipboard-write" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="sermons.html#library">More sermons →</a> · <a href="sermons.html#live">Watch live Sundays at 10:30 am →</a></p>
+        </div>
+        <div>
+          <h3>Coming up</h3>
+          <div class="events-box">
+            <div id="subsplash-embed-5tvqhhy"></div>
+            <script>
+              var target = document.getElementById("subsplash-embed-5tvqhhy");
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.onload = function () { subsplashEmbed("+9f75/lb/ca/+5tvqhhy?embed&branding", "https://subsplash.com/", "subsplash-embed-5tvqhhy"); };
+              script.src = "https://dashboard.static.subsplash.com/production/web-client/external/embed-1.1.0.js";
+              target.parentElement.insertBefore(script, target);
+            </script>
+          </div>
+          <p style="margin-top:12px"><a href="calendar.html">See the full calendar →</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -145,6 +187,19 @@
           <p>See what's coming up and register for events, classes and gatherings.</p>
           <span class="more">See events →</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter-band">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Stay in the loop</p>
+        <h2>Get Cool Connections</h2>
+        <p>Our weekly email with church news, upcoming events and ways to get involved.</p>
+      </div>
+      <div style="text-align:right">
+        <a class="btn" href="https://coolchurch.us7.list-manage.com/subscribe?u=929087a46ae756e791c8bebb2&amp;id=acf3701f4f" target="_blank" rel="noopener">Sign up for the newsletter</a>
       </div>
     </div>
   </section>

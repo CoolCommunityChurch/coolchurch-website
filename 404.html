@@ -45,7 +45,7 @@
       var part = slug.match(/^drew-buell-part-(\d)$/);
       var dest = part ? "stories/drew-buell.html#part-" + part[1]
         : stories.indexOf(slug) >= 0 ? "stories/" + slug + ".html"
-        : "blog.html";
+        : "resources.html";
       location.replace(root + dest);
     }
     document.querySelectorAll("[data-href]").forEach(function (a) { a.href = root + a.getAttribute("data-href"); });
