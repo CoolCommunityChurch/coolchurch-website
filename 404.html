@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found · Cool Community Church</title>
+  <style>
+    body { margin: 0; font-family: "Avenir Next", "Avenir", "Nunito Sans", "Helvetica Neue", Arial, sans-serif; color: #1B2235; background: #F6F7F9; }
+    .box { max-width: 560px; margin: 0 auto; padding: 64px 24px; text-align: center; }
+    img { height: 72px; margin-bottom: 24px; }
+    h1 { color: #202D50; font-size: 2rem; margin: 0 0 12px; }
+    p { line-height: 1.6; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
+    .links a { text-decoration: none; font-weight: 700; padding: 11px 20px; border-radius: 999px; border: 2px solid #1C75BC; color: #1C75BC; background: #fff; }
+    .links a.main { background: #1C75BC; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img data-src="media/brand/logo.png" alt="Cool Community Church">
+    <h1>We couldn't find that page.</h1>
+    <p>The link may be from an older version of our website, or an event that has already happened. Here are some places to start:</p>
+    <div class="links">
+      <a class="main" data-href="">Home</a>
+      <a data-href="visit.html">Plan Your Visit</a>
+      <a data-href="connect.html">Connect</a>
+      <a data-href="sermons.html">Sermons</a>
+      <a data-href="calendar.html">Calendar</a>
+    </div>
+    <p style="margin-top:28px">Questions? Call <a href="tel:+15308854385">(530) 885-4385</a> or email <a href="mailto:info@coolchurch.org">info@coolchurch.org</a>.</p>
+  </div>
+  <script>
+    // This page is shown for any missing address, at any depth, so build links from the site root.
+    var root = location.pathname.indexOf("/coolchurch-website/") === 0 ? "/coolchurch-website/" : "/";
+    document.querySelectorAll("[data-href]").forEach(function (a) { a.href = root + a.getAttribute("data-href"); });
+    document.querySelectorAll("img[data-src]").forEach(function (i) { i.src = root + i.getAttribute("data-src"); });
+  </script>
+</body>
+</html>
