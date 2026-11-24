@@ -23,13 +23,49 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="about.html">About</a>
-      <a href="visit.html">Plan Your Visit</a>
-      <a href="sermons.html">Sermons</a>
-      <a href="calendar.html">Calendar</a>
-      <a href="kids.html">Kids &amp; Youth</a>
-      <a href="blog.html">Blog</a>
-      <a class="btn" href="give.html">Give</a>
+      <div class="dropdown">
+        <a class="drop-top" href="about.html">About</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-1" aria-label="Show About pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-1">
+          <a href="about.html">About Us</a>
+          <a href="about.html#beliefs">What We Believe</a>
+          <a href="about.html#ministries">Ministries</a>
+          <a href="about.html#staff">Our Staff</a>
+          <a href="missions.html">Missions</a>
+          <a href="crossroads.html">Crossroads Counseling</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="visit.html">Plan Your Visit</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-2" aria-label="Show Plan Your Visit pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-2">
+          <a href="visit.html">Sunday Morning</a>
+          <a href="visit.html#look-around">Take a Look Around</a>
+          <a href="visit.html#next-steps">Next Steps</a>
+          <a href="calendar.html">Calendar</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="sermons.html">Sermons</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-3" aria-label="Show Sermons pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-3">
+          <a href="sermons.html#live">Watch Live</a>
+          <a href="sermons.html#library">Sermon Library</a>
+          <a href="blog.html">Blog: From Pastor Drew</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="kids.html">Kids &amp; Youth</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-4" aria-label="Show Kids &amp; Youth pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-4">
+          <a href="kids.html#childrens-church">Children's Church</a>
+          <a href="kids.html#events">Kids Events</a>
+          <a href="kids.html#adventure-club">Adventure Club</a>
+          <a href="kids.html#youth">Cool Youth</a>
+          <a href="youth-calendar.html">Youth Calendar</a>
+        </div>
+      </div>
+      <a class="btn" href="give.html" aria-current="page">Give</a>
     </nav>
   </div>
 </header>

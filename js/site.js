@@ -52,3 +52,41 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
   });
 });
+
+// Dropdown menus: the arrow button opens/closes its list (phones, tablets, keyboard);
+// on computers they also open on hover (see site.css).
+document.addEventListener("DOMContentLoaded", function () {
+  var drops = document.querySelectorAll(".dropdown");
+  function closeAll(except) {
+    for (var i = 0; i < drops.length; i++) {
+      if (drops[i] === except) continue;
+      drops[i].classList.remove("open");
+      drops[i].querySelector(".drop-btn").setAttribute("aria-expanded", "false");
+    }
+  }
+  for (var i = 0; i < drops.length; i++) {
+    (function (d) {
+      var btn = d.querySelector(".drop-btn");
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var open = !d.classList.contains("open");
+        closeAll(d);
+        d.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      // Close the menu after choosing a link (needed for same-page #links)
+      var links = d.querySelectorAll(".drop-menu a");
+      for (var j = 0; j < links.length; j++) {
+        links[j].addEventListener("click", function () {
+          closeAll(null);
+          var nav = document.getElementById("site-nav");
+          var toggle = document.querySelector(".menu-toggle");
+          if (nav) nav.classList.remove("open");
+          if (toggle) toggle.setAttribute("aria-expanded", "false");
+        });
+      }
+    })(drops[i]);
+  }
+  document.addEventListener("click", function () { closeAll(null); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeAll(null); });
+});

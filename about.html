@@ -23,12 +23,48 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="about.html" aria-current="page">About</a>
-      <a href="visit.html">Plan Your Visit</a>
-      <a href="sermons.html">Sermons</a>
-      <a href="calendar.html">Calendar</a>
-      <a href="kids.html">Kids &amp; Youth</a>
-      <a href="blog.html">Blog</a>
+      <div class="dropdown">
+        <a class="drop-top" href="about.html" aria-current="page">About</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-1" aria-label="Show About pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-1">
+          <a href="about.html">About Us</a>
+          <a href="about.html#beliefs">What We Believe</a>
+          <a href="about.html#ministries">Ministries</a>
+          <a href="about.html#staff">Our Staff</a>
+          <a href="missions.html">Missions</a>
+          <a href="crossroads.html">Crossroads Counseling</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="visit.html">Plan Your Visit</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-2" aria-label="Show Plan Your Visit pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-2">
+          <a href="visit.html">Sunday Morning</a>
+          <a href="visit.html#look-around">Take a Look Around</a>
+          <a href="visit.html#next-steps">Next Steps</a>
+          <a href="calendar.html">Calendar</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="sermons.html">Sermons</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-3" aria-label="Show Sermons pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-3">
+          <a href="sermons.html#live">Watch Live</a>
+          <a href="sermons.html#library">Sermon Library</a>
+          <a href="blog.html">Blog: From Pastor Drew</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="drop-top" href="kids.html">Kids &amp; Youth</a>
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="menu-4" aria-label="Show Kids &amp; Youth pages"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="drop-menu" id="menu-4">
+          <a href="kids.html#childrens-church">Children's Church</a>
+          <a href="kids.html#events">Kids Events</a>
+          <a href="kids.html#adventure-club">Adventure Club</a>
+          <a href="kids.html#youth">Cool Youth</a>
+          <a href="youth-calendar.html">Youth Calendar</a>
+        </div>
+      </div>
       <a class="btn" href="give.html">Give</a>
     </nav>
   </div>
@@ -91,7 +127,7 @@
         <details><summary>The Holy Spirit</summary><p>We believe that the Holy Spirit, in all that He does, glorifies the Lord Jesus Christ. He convicts the world of its guilt. He regenerates sinners, and in Him they are baptized into union with Christ and adopted as heirs in the family of God. He also indwells, illuminates, guides, equips and empowers believers for Christ-like living and service.</p></details>
         <details><summary>The Church</summary><p>We believe that the true church comprises all who have been justified by God's grace through faith alone in Christ alone. They are united by the Holy Spirit in the body of Christ, of which He is the Head. The true church is manifest in local churches, whose membership should be composed only of believers. The Lord Jesus mandated two ordinances, baptism and the Lord's Supper, which visibly and tangibly express the gospel. Though they are not the means of salvation, when celebrated by the church in genuine faith, these ordinances confirm and nourish the believer.</p></details>
         <details><summary>Christian Living</summary><p>We believe that God's justifying grace must not be separated from His sanctifying power and purpose. God commands us to love Him supremely and others sacrificially, and to live out our faith with care for one another, compassion toward the poor and justice for the oppressed. With God's Word, the Spirit's power, and fervent prayer in Christ's name, we are to combat the spiritual forces of evil. In obedience to Christ's commission, we are to make disciples among all people, always bearing witness to the gospel in word or deed.</p></details>
-        <details><summary>Christ's Return</summary><p>We believe in the personal, bodily and premillennial return of our Lord Jesus Christ. The coming of Christ, at a time known only to God, demands constant expectancy and, as our blessed hope, motivates the believer to godly living, sacrificial service and energetic mission.</p></details>
+        <details><summary>Christ's Return</summary><p>We believe in the personal, bodily and glorious return of our Lord Jesus Christ. The coming of Christ, at a time known only to God, demands constant expectancy and, as our blessed hope, motivates the believer to godly living, sacrificial service and energetic mission.</p></details>
         <details><summary>Response &amp; Eternal Destiny</summary><p>We believe that God commands everyone everywhere to believe the gospel by turning to Him in repentance and receiving the Lord Jesus Christ. We believe that God will raise the dead bodily and judge the world, assigning the unbeliever to condemnation and eternal conscious punishment and the believer to eternal blessedness and joy with the Lord in the new heaven and the new earth, to the praise of His glorious grace. Amen.</p></details>
       </div>
     </div>
@@ -100,12 +136,31 @@
   <section class="section alt" id="ministries">
     <div class="wrap">
       <h2>Ministries</h2>
-      <div class="grid grid-2" style="margin-top:24px">
-        <a class="card" href="kids.html"><h3>Children's Church &amp; Nursery</h3><p>Nursery through 6th grade, every Sunday during the service.</p><span class="more">Kids &amp; Youth →</span></a>
-        <a class="card" href="kids.html#youth"><h3>Cool Youth</h3><p>Junior high and high school, Tuesdays 6:15–8:00 pm.</p><span class="more">Cool Youth →</span></a>
-        <a class="card" href="visit.html#next-steps"><h3>Adults</h3><p>Adult Sunday School at 9:00 am, Home Groups around the Divide, and Empty Nesters (55+).</p><span class="more">Get connected →</span></a>
-        <a class="card" href="missions.html"><h3>Missions</h3><p>The missionaries we support around the world and our short-term trips, including Oaxaca, Mexico.</p><span class="more">Missions →</span></a>
-        <a class="card" href="crossroads.html"><h3>Crossroads Counseling Center</h3><p>Christ-centered counseling for adults, youth, children, couples and families.</p><span class="more">Crossroads →</span></a>
+      <div class="grid grid-3 ministry-cards" style="margin-top:24px">
+        <a class="card" href="kids.html#childrens-church">
+          <img src="media/photos/drew-reading-kids.jpg" alt="Pastor Drew reading a Bible storybook with children" loading="lazy">
+          <div class="body"><h3>Children's Church &amp; Nursery</h3><p>Nursery through 6th grade, every Sunday during the service.</p><span class="more">Children's Church →</span></div>
+        </a>
+        <a class="card" href="kids.html#adventure-club">
+          <img class="logo" src="media/photos/adventure-club.jpg" alt="Adventure Club characters" loading="lazy">
+          <div class="body"><h3>Adventure Club</h3><p>Our midweek kids' ministry: Bible lessons, Scripture memory, games and worship. Tuesdays 6:30–8:30 pm.</p><span class="more">Adventure Club →</span></div>
+        </a>
+        <a class="card" href="kids.html#youth">
+          <img class="logo" src="media/brand/cool-youth-logo.png" alt="Cool Youth logo" loading="lazy">
+          <div class="body"><h3>Cool Youth</h3><p>Junior high and high school, Tuesdays 6:15–8:00 pm.</p><span class="more">Cool Youth →</span></div>
+        </a>
+        <a class="card" href="visit.html#next-steps">
+          <img src="media/photos/worship-hands.jpg" alt="Members of the congregation worshiping together" loading="lazy">
+          <div class="body"><h3>Adults</h3><p>Adult Sunday School at 9:00 am, Home Groups around the Divide, and Empty Nesters (55+).</p><span class="more">Get connected →</span></div>
+        </a>
+        <a class="card" href="missions.html">
+          <img src="media/missions/merchants-oaxaca.jpg" alt="View over the city of Oaxaca, Mexico" loading="lazy">
+          <div class="body"><h3>Missions</h3><p>The missionaries we support around the world and our short-term trips, including Oaxaca, Mexico.</p><span class="more">Missions →</span></div>
+        </a>
+        <a class="card" href="crossroads.html">
+          <img src="media/photos/courtyard.jpg" alt="Quiet covered seating in the church courtyard" loading="lazy">
+          <div class="body"><h3>Crossroads Counseling Center</h3><p>Christ-centered counseling for adults, youth, children, couples and families.</p><span class="more">Crossroads →</span></div>
+        </a>
       </div>
     </div>
   </section>
