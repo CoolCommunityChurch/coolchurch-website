@@ -263,6 +263,17 @@ a.card:hover { border-color: var(--blue); transform: translateY(-2px); }
 .drew-callout img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
 @media (max-width: 560px) { .drew-callout { grid-template-columns: 1fr; } }
 
+/* ---------- Kids: Moments of Truth lesson list ---------- */
+
+.lesson-list { margin-top: 20px; }
+.lesson-list summary { cursor: pointer; font-weight: 700; color: var(--blue); }
+.lesson-list ol { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .lesson-list ol { grid-template-columns: repeat(2, 1fr); } }
+.lesson-list a { display: block; padding: 12px 16px; background: var(--white); border: 1px solid #E4E6EA; border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+.lesson-list a:hover { border-color: var(--blue); }
+.lesson-list strong { display: block; color: var(--navy); }
+.lesson-list span { font-size: .93rem; color: var(--gray-dark); }
+
 /* ---------- Connect page ---------- */
 
 .group-cards .facts { margin-bottom: 14px; }

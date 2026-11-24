@@ -33,6 +33,21 @@
   <script>
     // This page is shown for any missing address, at any depth, so build links from the site root.
     var root = location.pathname.indexOf("/coolchurch-website/") === 0 ? "/coolchurch-website/" : "/";
+
+    // Old SnapPages blog posts (/blog/2024/11/16/emily-lomas): testimonies moved to stories/,
+    // everything else goes to the Blog page.
+    var old = location.pathname.slice(root.length).match(/^blog\/\d{4}\/\d{2}\/\d{2}\/([^\/?#]+)/i);
+    if (old || /^blog\/?$/i.test(location.pathname.slice(root.length))) {
+      var stories = ["andy-fisher", "bob-akin", "dave-robertson", "don-bazinet", "drew-lomas", "emily-lomas",
+        "gary-farnworth-renewing-elder", "gary-farnworth", "jeff-parkhurst", "mike-denton", "reid-harmon",
+        "ross-gilleland", "steven-heinbach", "tom-grady", "tony-larich", "tyson-steward"];
+      var slug = old ? old[1].toLowerCase() : "";
+      var part = slug.match(/^drew-buell-part-(\d)$/);
+      var dest = part ? "stories/drew-buell.html#part-" + part[1]
+        : stories.indexOf(slug) >= 0 ? "stories/" + slug + ".html"
+        : "blog.html";
+      location.replace(root + dest);
+    }
     document.querySelectorAll("[data-href]").forEach(function (a) { a.href = root + a.getAttribute("data-href"); });
     document.querySelectorAll("img[data-src]").forEach(function (i) { i.src = root + i.getAttribute("data-src"); });
   </script>
